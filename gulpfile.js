@@ -3,6 +3,7 @@
 "use strict";
 
 var gulp = require("gulp"),
+    del = require('del'),
     /** @type {Object} Loader of Gulp plugins from `package.json` */
     $ = require("gulp-load-plugins")(),
 
@@ -68,8 +69,12 @@ gulp.task("uglify", function () {
 /** Clean job */
 gulp.task('clean', function() {
     // Clean dist dir
-    process.stdout.write("Cleaning dist directory" + '\n');
-    gulp.src('dist', {read: false}).pipe($.clean());
+
+    return del([
+        'dist/**/*'
+    ]);
+    // process.stdout.write("Cleaning dist directory" + '\n');
+    // gulp.src('dist', {read: false}).pipe($.clean());
 });
 
 /** Build job */
@@ -90,16 +95,20 @@ gulp.task('build', ["clean", "styles", "uglify"], function () {
         .pipe(gulp.dest("dist/"));
 });
 
-/** Watch task */
-gulp.task("watch", ["styles", "uglify"], function () {
-    /** Watch for CSS */
-    gulp.watch([
-        "src/css/scss/**/*.scss"
-    ], ["styles"]);
+// /** Watch task */
+// gulp.task("watch", ["styles", "uglify"], function () {
+//     /** Watch for CSS */
+//     gulp.watch([
+//         "src/css/scss/**/*.scss"
+//     ], ["styles"]);
 
-    /** Watch for JS */
-    gulp.watch(["src/js/{!(lib)/*.js,*.js}", "!src/main.min.js"], ["uglify"]);
-});
+//     /** Watch for JS */
+//     gulp.watch(["src/js/{!(lib)/*.js,*.js}", "!src/main.min.js"], ["uglify"]);
+// });
+
+// /** Gulp default task */
+// gulp.task("default", ["watch"]);
 
 /** Gulp default task */
-gulp.task("default", ["watch"]);
+gulp.task("default", ["build"]);
+

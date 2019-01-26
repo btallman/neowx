@@ -14,14 +14,17 @@
   "author": "Sven Reifschneider",
   "license": "MIT",
   "devDependencies": {
-    "gulp": "*",
+    "del": "^3.0.0",
+    "gulp": "^3.9.0",
     "gulp-autoprefixer": "*",
-    "gulp-clean": "*",
     "gulp-clean-css": "^3.9.0",
     "gulp-concat": "*",
     "gulp-load-plugins": "*",
+    "gulp-rename": "*",
     "gulp-sass": "*",
-    "gulp-uglify": "*",
-    "gulp-rename": "*"
+    "gulp-uglify": "*"
+  },
+  "dependencies": {
+    "node-sass": "^4.11.0"
   }
 }
