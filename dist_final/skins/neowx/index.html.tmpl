@@ -1,4 +1,6 @@
-#include "page_header.html"
+#set $page_title = $station.location | $Extras.Translation.title_suffix
+
+#include "page_header.html.tmpl"
 
         <!-- Main data -->
         <div class="row gutters row-gutters">
@@ -328,4 +330,4 @@
     </div>
 </main>
 
-#include "page_footer.html"
+#include "page_footer.html.tmpl"
