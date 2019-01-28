@@ -23,6 +23,8 @@ class BasicInstaller(ExtensionInstaller):
             },
             files=[('skins/neowx',
                     ['skins/neowx/archive.html.tmpl',
+                    'skins/neowx/page_header.html.tmpl',
+                    'skins/neowx/page_footer.html.tmpl',
                     'skins/neowx/index.html.tmpl',
                     'skins/neowx/main.min.js',
                     'skins/neowx/manifest.json',
