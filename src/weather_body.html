@@ -124,12 +124,12 @@
                                 <tr>
                                     <td>$Extras.Translation.high:</td>
                                     <td>$weather_body.inTemp.max</td>
-                                    <td>($weather_body.inTemp.maxtime.format("%H:%M"))</td>
+                                    <td>($weather_body.inTemp.maxtime.format("%a %H:%M"))</td>
                                 </tr>
                                 <tr>
                                     <td>$Extras.Translation.low:</td>
                                     <td>$weather_body.inTemp.min</td>
-                                    <td>($weather_body.inTemp.mintime.format("%H:%M"))</td>
+                                    <td>($weather_body.inTemp.mintime.format("%a %H:%M"))</td>
                                 </tr>
                                 <tr>
                                     <td colspan="3">
@@ -153,7 +153,7 @@
                                 <tr>
                                     <td>$Extras.Translation.high:</td>
                                     <td>$weather_body.heatindex.max</td>
-                                    <td>($weather_body.heatindex.maxtime.format("%H:%M"))</td>
+                                    <td>($weather_body.heatindex.maxtime.format("%a %H:%M"))</td>
                                 </tr>
                             </table>
                         </div>
@@ -252,6 +252,6 @@
                 <a data-fancybox="gallery" href="${weather_body_graphs}winddir.png"><img src="${weather_body_graphs}winddir.png" alt="$Extras.Translation.wind_dir"></a>
             </div>
         </div>
-        
+
     </div>
 </main>
