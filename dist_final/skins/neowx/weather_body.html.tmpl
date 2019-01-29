@@ -11,7 +11,7 @@
                         <div class="crd-content">
                             #if $weather_body_graphs == 'day'
                             <span class="weatherdata">$current.outTemp</span>
-                            #end
+                            #end if
                             <table class="meta">
                                 <tr>
                                     <td>$Extras.Translation.high:</td>
@@ -36,7 +36,7 @@
                         <div class="crd-content">
                             #if $weather_body_graphs == 'day'
                                 <span class="weatherdata">$current.outHumidity</span>
-                            #end
+                            #end if
                             <table class="meta">
                                 <tr>
                                     <td>$Extras.Translation.high:</td>
@@ -61,7 +61,7 @@
                         <div class="crd-content">
                             #if $weather_body_graphs == 'day'
                                 <span class="weatherdata">$current.barometer</span>
-                            #end
+                            #end if
                             <table class="meta">
                                 <tr>
                                     <td>$Extras.Translation.high:</td>
