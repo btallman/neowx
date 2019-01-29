@@ -21,7 +21,7 @@
                                     <td>($weather_body.outTemp.mintime.format("%H:%M"))</td>
                                 </tr>
                                 <tr>
-                                    <td colspan="3"><a data-fancybox="gallery" href="${weather_body_graphs}tempdew.png"><img src=${weather_body_graphs}tempdew.png" alt="$Extras.Translation.temperatures"></a></td>
+                                    <td colspan="3"><a data-fancybox="gallery" href="${weather_body_graphs}tempdew.png"><img src="${weather_body_graphs}tempdew.png" alt="$Extras.Translation.temperatures"></a></td>
                                 </tr>
                             </table>
                         </div>
@@ -44,7 +44,7 @@
                                     <td>($weather_body.outHumidity.mintime.format("%H:%M"))</td>
                                 </tr>
                                 <tr>
-                                    <td colspan="3"><a data-fancybox="gallery" href="${weather_body_graphs}humidity.png"><img src=${weather_body_graphs}humidity.png" alt="$Extras.Translation.humidity"></a></td>
+                                    <td colspan="3"><a data-fancybox="gallery" href="${weather_body_graphs}humidity.png"><img src="${weather_body_graphs}humidity.png" alt="$Extras.Translation.out_humidity"></a></td>
                                 </tr>
                             </table>
                         </div>
@@ -72,7 +72,7 @@
                                     <td></td>
                                 </tr> -->
                                 <tr>
-                                    <td colspan="3"><a data-fancybox="gallery" href="${weather_body_graphs}barometer.png"><img src=${weather_body_graphs}barometer.png" alt="$Extras.Translation.barometer"></a></td>
+                                    <td colspan="3"><a data-fancybox="gallery" href="${weather_body_graphs}barometer.png"><img src="${weather_body_graphs}barometer.png" alt="$Extras.Translation.barometer"></a></td>
                                 </tr>                                
                             </table>
                         </div>
@@ -257,44 +257,44 @@
         <div class="row gutters row-gutters">
             <div class="col col-6 crd graph-crd">
                 <h4>$Extras.Translation.temperatures</h4>
-                <a data-fancybox="gallery" href=${weather_body_graphs}tempdew.png"><img src=${weather_body_graphs}tempdew.png" alt="$Extras.Translation.temperatures"></a>
+                <a data-fancybox="gallery" href="${weather_body_graphs}tempdew.png"><img src="${weather_body_graphs}tempdew.png" alt="$Extras.Translation.temperatures"></a>
             </div>
             <div class="col col-6 crd graph-crd">
                 <h4>$Extras.Translation.wind_chill & $Extras.Translation.heat_index</h4>
-                <a data-fancybox="gallery" href=${weather_body_graphs}tempchill.png"><img src=${weather_body_graphs}tempchill.png" alt="$Extras.Translation.wind_chill & $Extras.Translation.heat_index"></a>
+                <a data-fancybox="gallery" href="${weather_body_graphs}tempchill.png"><img src="${weather_body_graphs}tempchill.png" alt="$Extras.Translation.wind_chill & $Extras.Translation.heat_index"></a>
             </div>
         </div>
 
         <div class="row gutters row-gutters">
             <div class="col col-6 crd graph-crd">
                 <h4>$Extras.Translation.barometer</h4>
-                <a data-fancybox="gallery" href=${weather_body_graphs}barometer.png"><img src=${weather_body_graphs}barometer.png" alt="$Extras.Translation.barometer"></a>
+                <a data-fancybox="gallery" href="${weather_body_graphs}barometer.png"><img src="${weather_body_graphs}barometer.png" alt="$Extras.Translation.barometer"></a>
             </div>
             <div class="col col-6 crd graph-crd">
                 <h4>$Extras.Translation.rain</h4>
-                <a data-fancybox="gallery" href=${weather_body_graphs}rain.png"><img src=${weather_body_graphs}rain.png" alt="$Extras.Translation.rain"></a>
+                <a data-fancybox="gallery" href="${weather_body_graphs}rain.png"><img src="${weather_body_graphs}rain.png" alt="$Extras.Translation.rain"></a>
             </div>
         </div>
 
         <div class="row gutters row-gutters">
             <div class="col col-6 crd graph-crd">
                 <h4>$Extras.Translation.wind</h4>
-                <a data-fancybox="gallery" href=${weather_body_graphs}wind.png"><img src=${weather_body_graphs}wind.png" alt="$Extras.Translation.wind"></a>
+                <a data-fancybox="gallery" href="${weather_body_graphs}wind.png"><img src="${weather_body_graphs}wind.png" alt="$Extras.Translation.wind"></a>
             </div>
             <div class="col col-6 crd graph-crd">
                 <h4>$Extras.Translation.wind_dir</h4>
-                <a data-fancybox="gallery" href=${weather_body_graphs}winddir.png"><img src=${weather_body_graphs}winddir.png" alt="$Extras.Translation.wind_dir"></a>
+                <a data-fancybox="gallery" href="${weather_body_graphs}winddir.png"><img src="${weather_body_graphs}winddir.png" alt="$Extras.Translation.wind_dir"></a>
             </div>
         </div>
 
         <div class="row gutters row-gutters">
             <div class="col col-6 crd graph-crd">
                 <h4>$Extras.Translation.wind_vector</h4>
-                <a data-fancybox="gallery" href=${weather_body_graphs}windvec.png"><img src=${weather_body_graphs}windvec.png" alt="$Extras.Translation.wind_vector"></a>
+                <a data-fancybox="gallery" href="${weather_body_graphs}windvec.png"><img src="${weather_body_graphs}windvec.png" alt="$Extras.Translation.wind_vector"></a>
             </div>
             <div class="col col-6 crd graph-crd">
                 <h4>$Extras.Translation.inside_temp</h4>
-                <a data-fancybox="gallery" href=${weather_body_graphs}inside.png"><img src=${weather_body_graphs}inside.png" alt="$Extras.Translation.inside_temp"></a>
+                <a data-fancybox="gallery" href="${weather_body_graphs}inside.png"><img src="${weather_body_graphs}inside.png" alt="$Extras.Translation.inside_temp"></a>
             </div>
         </div>
 
@@ -303,13 +303,13 @@
             #if $weather_body.radiation.has_data
             <div class="col col-6 crd graph-crd">
                 <h4>$Extras.Translation.radiation</h4>
-                <a data-fancybox="gallery" href=${weather_body_graphs}radiation.png"><img src=${weather_body_graphs}radiation.png" alt="$Extras.Translation.radiation"></a>
+                <a data-fancybox="gallery" href="${weather_body_graphs}radiation.png"><img src="${weather_body_graphs}radiation.png" alt="$Extras.Translation.radiation"></a>
             </div>
             #end if
             #if $weather_body.UV.has_data
             <div class="col col-6 crd graph-crd">
                 <h4>$Extras.Translation.uv</h4>
-                <a data-fancybox="gallery" href=${weather_body_graphs}uv.png"><img src=${weather_body_graphs}uv.png" alt="$Extras.Translation.uv"></a>
+                <a data-fancybox="gallery" href="${weather_body_graphs}uv.png"><img src="${weather_body_graphs}uv.png" alt="$Extras.Translation.uv"></a>
             </div>
             #end if
         </div>
@@ -320,13 +320,13 @@
             #if $weather_body.rxCheckPercent.has_data
             <div class="col col-6 crd graph-crd">
                 <h4>$Extras.Translation.rxcheck</h4>
-                <a data-fancybox="gallery" href=${weather_body_graphs}rx.png"><img src=${weather_body_graphs}rx.png" alt="$Extras.Translation.rxcheck"></a>
+                <a data-fancybox="gallery" href="${weather_body_graphs}rx.png"><img src="${weather_body_graphs}rx.png" alt="$Extras.Translation.rxcheck"></a>
             </div>
             #end if
             #if $weather_body.extraTemp1.has_data
             <div class="col col-6 crd graph-crd">
                 <h4>$Extras.Translation.extratemp</h4>
-                <a data-fancybox="gallery" href=${weather_body_graphs}pond.png"><img src=${weather_body_graphs}pond.png" alt="$Extras.Translation.extratemp"></a>
+                <a data-fancybox="gallery" href="${weather_body_graphs}pond.png"><img src="${weather_body_graphs}pond.png" alt="$Extras.Translation.extratemp"></a>
             </div>
             #end if
         </div>
