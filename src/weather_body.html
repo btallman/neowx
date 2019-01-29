@@ -144,23 +144,19 @@
                     </div>
                     <div class="col col-4 crd">
 
-                        <h4><i class="wi wi-humidity"></i> $Extras.Translation.inside_humid</h4>
+                        <h4><i class="wi wi-fire"></i> $Extras.Translation.heat_index</h4>
                         <div class="crd-content">
-                            <span class="weatherdata">$current.inHumidity</span>
+                            #if $weather_body_graphs == 'day'
+                                <span class="weatherdata">$current.heatindex</span>
+                            #end if
                             <table class="meta">
                                 <tr>
                                     <td>$Extras.Translation.high:</td>
-                                    <td>$weather_body.inHumidity.max</td>
-                                    <td>($weather_body.inHumidity.maxtime.format("%H:%M"))</td>
-                                </tr>
-                                <tr>
-                                    <td>$Extras.Translation.low:</td>
-                                    <td>$weather_body.inHumidity.min</td>
-                                    <td>($weather_body.inHumidity.mintime.format("%H:%M"))</td>
+                                    <td>$weather_body.heatindex.max</td>
+                                    <td>($weather_body.heatindex.maxtime.format("%H:%M"))</td>
                                 </tr>
                             </table>
                         </div>
-
                     </div>
                 </div>
 
@@ -207,21 +203,7 @@
         </div>
 
         <div class="row gutters row-gutters">
-            <div class="col col-3 crd">
-
-                <h4><i class="wi wi-fire"></i> $Extras.Translation.heat_index</h4>
-                <div class="crd-content">
-                    <span class="weatherdata">$current.heatindex</span>
-                    <table class="meta">
-                        <tr>
-                            <td>$Extras.Translation.high:</td>
-                            <td>$weather_body.heatindex.max</td>
-                            <td>($weather_body.heatindex.maxtime.format("%H:%M"))</td>
-                        </tr>
-                    </table>
-                </div>
-
-            </div>
+            
             #if $weather_body.UV.has_data
             <div class="col col-3 crd">
 
