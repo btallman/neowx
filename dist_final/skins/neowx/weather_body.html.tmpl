@@ -155,7 +155,9 @@
 
                 <h4><i class="wi wi-strong-wind"></i> $Extras.Translation.wind</h4>
                 <div class="crd-content">
-                    <span class="weatherdata">$current.windSpeed $current.windDir.ordinal_compass <br><i class="wi wi-wind from-$current.windDir.formatted-deg"></i></span>
+                    #if $weather_body_graphs == 'day'
+                        <span class="weatherdata">$current.windSpeed $current.windDir.ordinal_compass <br><i class="wi wi-wind from-$current.windDir.formatted-deg"></i></span>
+                    #end if
                     <table class="meta">
                         <tr>
                             <td>$Extras.Translation.wind_avg:</td>
@@ -176,6 +178,13 @@
                             <td>$Extras.Translation.vector_avg:</td>
                             <td>$weather_body.wind.vecavg<br> $weather_body.wind.vecdir <i class="wi wi-wind from-$weather_body.wind.vecdir.formatted-deg"></i></td>
                             <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <a data-fancybox="gallery" href="${weather_body_graphs}wind.png">
+                                    <img src="${weather_body_graphs}wind.png" alt="$Extras.Translation.wind">
+                                </a>
+                            </td>
                         </tr>
                     </table>
                 </div>
@@ -260,17 +269,6 @@
         </div>
 
         <!-- GRAPHS -->
-
-        <div class="row gutters row-gutters">
-            <div class="col col-6 crd graph-crd">
-                <h4>$Extras.Translation.temperatures</h4>
-                <a data-fancybox="gallery" href="${weather_body_graphs}tempdew.png"><img src="${weather_body_graphs}tempdew.png" alt="$Extras.Translation.temperatures"></a>
-            </div>
-            <div class="col col-6 crd graph-crd">
-                <h4>$Extras.Translation.wind_chill & $Extras.Translation.heat_index</h4>
-                <a data-fancybox="gallery" href="${weather_body_graphs}tempchill.png"><img src="${weather_body_graphs}tempchill.png" alt="$Extras.Translation.wind_chill & $Extras.Translation.heat_index"></a>
-            </div>
-        </div>
 
         <div class="row gutters row-gutters">
             <div class="col col-6 crd graph-crd">
