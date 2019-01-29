@@ -104,6 +104,13 @@
                                     <td>$weather_body.rainRate.max</td>
                                     <td>($weather_body.rainRate.maxtime.format("%H:%M"))</td>
                                 </tr>
+                                <tr>
+                                    <td colspan="=3">
+                                        <a data-fancybox="gallery" href="${weather_body_graphs}rain.png">
+                                            <img src="${weather_body_graphs}rain.png" alt="$Extras.Translation.rain">
+                                        </a>
+                                    </td>
+                                </tr>
                             </table>
                         </div>
 
@@ -123,6 +130,13 @@
                                     <td>$Extras.Translation.low:</td>
                                     <td>$weather_body.inTemp.min</td>
                                     <td>($weather_body.inTemp.mintime.format("%H:%M"))</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        <a data-fancybox="gallery" href="${weather_body_graphs}inside.png">
+                                            <img src="${weather_body_graphs}inside.png" alt="$Extras.Translation.inside_temp">
+                                        </a>
+                                    </td>
                                 </tr>
                             </table>
                         </div>
@@ -167,7 +181,7 @@
                         <tr>
                             <td>$Extras.Translation.high:</td>
                             <td>$weather_body.wind.max<br> $weather_body.wind.gustdir <i class="wi wi-wind from-$weather_body.wind.gustdir.formatted-deg"></i></td>
-                            <td>($weather_body.wind.maxtime.format("%H:%M"))</td>
+                            <td>($weather_body.wind.maxtime.format("%a %H:%M"))</td>
                         </tr>
                         <tr>
                             <td>$Extras.Translation.wind_rms:</td>
@@ -193,41 +207,6 @@
         </div>
 
         <div class="row gutters row-gutters">
-            <div class="col col-3 crd">
-
-                <h4><i class="wi wi-windy"></i> $Extras.Translation.wind_chill</h4>
-                <div class="crd-content">
-                    <span class="weatherdata">$current.windchill</span>
-                    <table class="meta">
-                        <tr>
-                            <td>$Extras.Translation.low:</td>
-                            <td>$weather_body.windchill.min</td>
-                            <td>($weather_body.windchill.mintime.format("%H:%M"))</td>
-                        </tr>
-                    </table>
-                </div>
-
-            </div>
-            <div class="col col-3 crd">
-
-                <h4><i class="wi wi-thermometer-exterior"></i> $Extras.Translation.dewpoint</h4>
-                <div class="crd-content">
-                    <span class="weatherdata">$current.dewpoint</span>
-                    <table class="meta">
-                        <tr>
-                            <td>$Extras.Translation.high:</td>
-                            <td>$weather_body.dewpoint.max</td>
-                            <td>($weather_body.dewpoint.maxtime.format("%H:%M"))</td>
-                        </tr>
-                        <tr>
-                            <td>$Extras.Translation.low:</td>
-                            <td>$weather_body.dewpoint.min</td>
-                            <td>($weather_body.dewpoint.mintime.format("%H:%M"))</td>
-                        </tr>
-                    </table>
-                </div>
-
-            </div>
             <div class="col col-3 crd">
 
                 <h4><i class="wi wi-fire"></i> $Extras.Translation.heat_index</h4>
