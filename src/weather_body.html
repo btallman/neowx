@@ -9,7 +9,9 @@
                         <h4><i class="wi wi-thermometer"></i> $Extras.Translation.out_temp</h4>
 
                         <div class="crd-content">
+                            #if $weather_body_graphs == 'day'
                             <span class="weatherdata">$current.outTemp</span>
+                            #end
                             <table class="meta">
                                 <tr>
                                     <td>$Extras.Translation.high:</td>
@@ -32,7 +34,9 @@
 
                         <h4><i class="wi wi-humidity"></i> $Extras.Translation.out_humidity</h4>
                         <div class="crd-content">
-                            <span class="weatherdata">$current.outHumidity</span>
+                            #if $weather_body_graphs == 'day'
+                                <span class="weatherdata">$current.outHumidity</span>
+                            #end
                             <table class="meta">
                                 <tr>
                                     <td>$Extras.Translation.high:</td>
@@ -55,7 +59,9 @@
 
                         <h4><i class="wi wi-barometer"></i> $Extras.Translation.barometer</h4>
                         <div class="crd-content">
-                            <span class="weatherdata">$current.barometer</span>
+                            #if $weather_body_graphs == 'day'
+                                <span class="weatherdata">$current.barometer</span>
+                            #end
                             <table class="meta">
                                 <tr>
                                     <td>$Extras.Translation.high:</td>
