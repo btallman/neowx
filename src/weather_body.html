@@ -1,0 +1,336 @@
+        <!-- Main data -->
+        <div class="row gutters row-gutters">
+            <div class="col col-9">
+
+                <div class="row gutters row-gutters">
+                    <div class="col col-4 crd">
+
+                        <h4><i class="wi wi-thermometer"></i> $Extras.Translation.out_temp</h4>
+
+                        <div class="crd-content">
+                            <span class="weatherdata">$current.outTemp</span>
+                            <table class="meta">
+                                <tr>
+                                    <td>$Extras.Translation.high:</td>
+                                    <td>$weather_body.outTemp.max</td>
+                                    <td>($weather_body.outTemp.maxtime.format("%H:%M"))</td>
+                                </tr>
+                                <tr>
+                                    <td>$Extras.Translation.low:</td>
+                                    <td>$weather_body.outTemp.min</td>
+                                    <td>($weather_body.outTemp.mintime.format("%H:%M"))</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><a data-fancybox="gallery" href="${weather_body_graphs}tempdew.png"><img src=${weather_body_graphs}tempdew.png" alt="$Extras.Translation.temperatures"></a></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+                    <div class="col col-4 crd">
+
+                        <h4><i class="wi wi-humidity"></i> $Extras.Translation.out_humidity</h4>
+                        <div class="crd-content">
+                            <span class="weatherdata">$current.outHumidity</span>
+                            <table class="meta">
+                                <tr>
+                                    <td>$Extras.Translation.high:</td>
+                                    <td>$weather_body.outHumidity.max</td>
+                                    <td>($weather_body.outHumidity.maxtime.format("%H:%M"))</td>
+                                </tr>
+                                <tr>
+                                    <td>$Extras.Translation.low:</td>
+                                    <td>$weather_body.outHumidity.min</td>
+                                    <td>($weather_body.outHumidity.mintime.format("%H:%M"))</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><a data-fancybox="gallery" href="${weather_body_graphs}humidity.png"><img src=${weather_body_graphs}humidity.png" alt="$Extras.Translation.humidity"></a></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+                    <div class="col col-4 crd">
+
+                        <h4><i class="wi wi-barometer"></i> $Extras.Translation.barometer</h4>
+                        <div class="crd-content">
+                            <span class="weatherdata">$current.barometer</span>
+                            <table class="meta">
+                                <tr>
+                                    <td>$Extras.Translation.high:</td>
+                                    <td>$weather_body.barometer.max</td>
+                                    <td>($weather_body.barometer.maxtime.format("%H:%M"))</td>
+                                </tr>
+                                <tr>
+                                    <td>$Extras.Translation.low:</td>
+                                    <td>$weather_body.barometer.min</td>
+                                    <td>($weather_body.barometer.mintime.format("%H:%M"))</td>
+                                </tr>
+                                <!-- <tr>
+                                    <td>$Extras.Translation.baro_trend ($trend.time_delta.hour):</td>
+                                    <td>$trend.barometer</td>
+                                    <td></td>
+                                </tr> -->
+                                <tr>
+                                    <td colspan="3"><a data-fancybox="gallery" href="${weather_body_graphs}barometer.png"><img src=${weather_body_graphs}barometer.png" alt="$Extras.Translation.barometer"></a></td>
+                                </tr>                                
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row gutters row-gutters">
+                    <div class="col col-4 crd">
+
+                        <h4><i class="wi wi-umbrella"></i> $Extras.Translation.rain</h4>
+                        <div class="crd-content">
+                            <span class="weatherdata">$weather_body.rain.sum</span>
+                            <table class="meta">
+                                <tr>
+                                    <td>$Extras.Translation.rain_rate:</td>
+                                    <td>$current.rainRate</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Hi $Extras.Translation.rain_rate:</td>
+                                    <td>$weather_body.rainRate.max</td>
+                                    <td>($weather_body.rainRate.maxtime.format("%H:%M"))</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+                    <div class="col col-4 crd">
+
+                        <h4><i class="wi wi-thermometer"></i> $Extras.Translation.inside_temp</h4>
+                        <div class="crd-content">
+                            <span class="weatherdata">$current.inTemp</span>
+                            <table class="meta">
+                                <tr>
+                                    <td>$Extras.Translation.high:</td>
+                                    <td>$weather_body.inTemp.max</td>
+                                    <td>($weather_body.inTemp.maxtime.format("%H:%M"))</td>
+                                </tr>
+                                <tr>
+                                    <td>$Extras.Translation.low:</td>
+                                    <td>$weather_body.inTemp.min</td>
+                                    <td>($weather_body.inTemp.mintime.format("%H:%M"))</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+                    <div class="col col-4 crd">
+
+                        <h4><i class="wi wi-humidity"></i> $Extras.Translation.inside_humid</h4>
+                        <div class="crd-content">
+                            <span class="weatherdata">$current.inHumidity</span>
+                            <table class="meta">
+                                <tr>
+                                    <td>$Extras.Translation.high:</td>
+                                    <td>$weather_body.inHumidity.max</td>
+                                    <td>($weather_body.inHumidity.maxtime.format("%H:%M"))</td>
+                                </tr>
+                                <tr>
+                                    <td>$Extras.Translation.low:</td>
+                                    <td>$weather_body.inHumidity.min</td>
+                                    <td>($weather_body.inHumidity.mintime.format("%H:%M"))</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col col-3 crd">
+
+                <h4><i class="wi wi-strong-wind"></i> $Extras.Translation.wind</h4>
+                <div class="crd-content">
+                    <span class="weatherdata">$current.windSpeed $current.windDir.ordinal_compass <br><i class="wi wi-wind from-$current.windDir.formatted-deg"></i></span>
+                    <table class="meta">
+                        <tr>
+                            <td>$Extras.Translation.wind_avg:</td>
+                            <td>$weather_body.wind.avg</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>$Extras.Translation.high:</td>
+                            <td>$weather_body.wind.max<br> $weather_body.wind.gustdir <i class="wi wi-wind from-$weather_body.wind.gustdir.formatted-deg"></i></td>
+                            <td>($weather_body.wind.maxtime.format("%H:%M"))</td>
+                        </tr>
+                        <tr>
+                            <td>$Extras.Translation.wind_rms:</td>
+                            <td>$weather_body.wind.rms</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>$Extras.Translation.vector_avg:</td>
+                            <td>$weather_body.wind.vecavg<br> $weather_body.wind.vecdir <i class="wi wi-wind from-$weather_body.wind.vecdir.formatted-deg"></i></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row gutters row-gutters">
+            <div class="col col-3 crd">
+
+                <h4><i class="wi wi-windy"></i> $Extras.Translation.wind_chill</h4>
+                <div class="crd-content">
+                    <span class="weatherdata">$current.windchill</span>
+                    <table class="meta">
+                        <tr>
+                            <td>$Extras.Translation.low:</td>
+                            <td>$weather_body.windchill.min</td>
+                            <td>($weather_body.windchill.mintime.format("%H:%M"))</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+            <div class="col col-3 crd">
+
+                <h4><i class="wi wi-thermometer-exterior"></i> $Extras.Translation.dewpoint</h4>
+                <div class="crd-content">
+                    <span class="weatherdata">$current.dewpoint</span>
+                    <table class="meta">
+                        <tr>
+                            <td>$Extras.Translation.high:</td>
+                            <td>$weather_body.dewpoint.max</td>
+                            <td>($weather_body.dewpoint.maxtime.format("%H:%M"))</td>
+                        </tr>
+                        <tr>
+                            <td>$Extras.Translation.low:</td>
+                            <td>$weather_body.dewpoint.min</td>
+                            <td>($weather_body.dewpoint.mintime.format("%H:%M"))</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+            <div class="col col-3 crd">
+
+                <h4><i class="wi wi-fire"></i> $Extras.Translation.heat_index</h4>
+                <div class="crd-content">
+                    <span class="weatherdata">$current.heatindex</span>
+                    <table class="meta">
+                        <tr>
+                            <td>$Extras.Translation.high:</td>
+                            <td>$weather_body.heatindex.max</td>
+                            <td>($weather_body.heatindex.maxtime.format("%H:%M"))</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+            #if $weather_body.UV.has_data
+            <div class="col col-3 crd">
+
+                <h4><i class="wi wi-fire"></i> $Extras.Translation.uv</h4>
+                <div class="crd-content">
+                    <span class="weatherdata">$current.UV</span>
+                    <table class="meta">
+                        <tr>
+                            <td>$Extras.Translation.high:</td>
+                            <td>$weather_body.UV.max</td>
+                            <td>($weather_body.UV.maxtime.format("%H:%M"))</td>
+                        </tr>
+                        <tr>
+                            <td>$Extras.Translation.low:</td>
+                            <td>$weather_body.UV.min</td>
+                            <td>($weather_body.UV.mintime.format("%H:%M"))</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            #else
+            <div class="col col-3"></div>
+            #end if
+        </div>
+
+        <!-- GRAPHS -->
+
+        <div class="row gutters row-gutters">
+            <div class="col col-6 crd graph-crd">
+                <h4>$Extras.Translation.temperatures</h4>
+                <a data-fancybox="gallery" href=${weather_body_graphs}tempdew.png"><img src=${weather_body_graphs}tempdew.png" alt="$Extras.Translation.temperatures"></a>
+            </div>
+            <div class="col col-6 crd graph-crd">
+                <h4>$Extras.Translation.wind_chill & $Extras.Translation.heat_index</h4>
+                <a data-fancybox="gallery" href=${weather_body_graphs}tempchill.png"><img src=${weather_body_graphs}tempchill.png" alt="$Extras.Translation.wind_chill & $Extras.Translation.heat_index"></a>
+            </div>
+        </div>
+
+        <div class="row gutters row-gutters">
+            <div class="col col-6 crd graph-crd">
+                <h4>$Extras.Translation.barometer</h4>
+                <a data-fancybox="gallery" href=${weather_body_graphs}barometer.png"><img src=${weather_body_graphs}barometer.png" alt="$Extras.Translation.barometer"></a>
+            </div>
+            <div class="col col-6 crd graph-crd">
+                <h4>$Extras.Translation.rain</h4>
+                <a data-fancybox="gallery" href=${weather_body_graphs}rain.png"><img src=${weather_body_graphs}rain.png" alt="$Extras.Translation.rain"></a>
+            </div>
+        </div>
+
+        <div class="row gutters row-gutters">
+            <div class="col col-6 crd graph-crd">
+                <h4>$Extras.Translation.wind</h4>
+                <a data-fancybox="gallery" href=${weather_body_graphs}wind.png"><img src=${weather_body_graphs}wind.png" alt="$Extras.Translation.wind"></a>
+            </div>
+            <div class="col col-6 crd graph-crd">
+                <h4>$Extras.Translation.wind_dir</h4>
+                <a data-fancybox="gallery" href=${weather_body_graphs}winddir.png"><img src=${weather_body_graphs}winddir.png" alt="$Extras.Translation.wind_dir"></a>
+            </div>
+        </div>
+
+        <div class="row gutters row-gutters">
+            <div class="col col-6 crd graph-crd">
+                <h4>$Extras.Translation.wind_vector</h4>
+                <a data-fancybox="gallery" href=${weather_body_graphs}windvec.png"><img src=${weather_body_graphs}windvec.png" alt="$Extras.Translation.wind_vector"></a>
+            </div>
+            <div class="col col-6 crd graph-crd">
+                <h4>$Extras.Translation.inside_temp</h4>
+                <a data-fancybox="gallery" href=${weather_body_graphs}inside.png"><img src=${weather_body_graphs}inside.png" alt="$Extras.Translation.inside_temp"></a>
+            </div>
+        </div>
+
+        #if $weather_body.radiation.has_data or $weather_body.UV.has_data
+        <div class="row gutters row-gutters">
+            #if $weather_body.radiation.has_data
+            <div class="col col-6 crd graph-crd">
+                <h4>$Extras.Translation.radiation</h4>
+                <a data-fancybox="gallery" href=${weather_body_graphs}radiation.png"><img src=${weather_body_graphs}radiation.png" alt="$Extras.Translation.radiation"></a>
+            </div>
+            #end if
+            #if $weather_body.UV.has_data
+            <div class="col col-6 crd graph-crd">
+                <h4>$Extras.Translation.uv</h4>
+                <a data-fancybox="gallery" href=${weather_body_graphs}uv.png"><img src=${weather_body_graphs}uv.png" alt="$Extras.Translation.uv"></a>
+            </div>
+            #end if
+        </div>
+        #end if
+
+        #if $weather_body.rxCheckPercent.has_data or $weather_body.UV.has_data
+        <div class="row gutters row-gutters">
+            #if $weather_body.rxCheckPercent.has_data
+            <div class="col col-6 crd graph-crd">
+                <h4>$Extras.Translation.rxcheck</h4>
+                <a data-fancybox="gallery" href=${weather_body_graphs}rx.png"><img src=${weather_body_graphs}rx.png" alt="$Extras.Translation.rxcheck"></a>
+            </div>
+            #end if
+            #if $weather_body.extraTemp1.has_data
+            <div class="col col-6 crd graph-crd">
+                <h4>$Extras.Translation.extratemp</h4>
+                <a data-fancybox="gallery" href=${weather_body_graphs}pond.png"><img src=${weather_body_graphs}pond.png" alt="$Extras.Translation.extratemp"></a>
+            </div>
+            #end if
+        </div>
+        #end if
+
+    </div>
+</main>
